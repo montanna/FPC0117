@@ -1,0 +1,73 @@
+#footerContainer {
+  background-color: #2C2C2C;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+#footerList .col-sm-3 h3 {
+  color: #FFF;
+  font-size: 16px;
+}
+#footerList .col-sm-3 .list-group {
+  background-color: transparent;
+}
+#footerList .col-sm-3 .list-group .list-group-item {
+  border: none;
+  background: transparent;
+  padding-left: 0px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+#footerList .col-sm-3 .list-group .list-group-item a {
+  color: #808080;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+#footerList .col-sm-3 .list-group .list-group-item a:hover {
+  color: #355C95;
+}
+#socialContactContainer .list-group {
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+#socialContactContainer .list-group .list-group-item {
+  background: transparent;
+  background-color: transparent;
+  border: none;
+  color: #FFF;
+}
+#contact {
+  background: url('../images/Downtown Blue Original.png') no-repeat center center fixed;
+  background-size: cover;
+}
+#socialContactContainer {
+  background: #355C95;
+  position: absolute;
+  bottom: 35vh;
+  left: 0;
+  width: 100%;
+}
+#contactInfo {
+  color: #FFF;
+  font-size: 18px;
+}
+#contactInfo p a {
+  color: #355C95;
+  text-decoration: underline;
+}
+#contactInfo p img {
+  height: 150px;
+  width: 150px;
+}
+.paypal-button {
+  position: absolute;
+  top: 0px;
+  right: 40px;
+}
+.footerLogo {
+  height: 10vh;
+}
