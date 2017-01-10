@@ -1,4 +1,6 @@
-﻿function LoginViewModel() {
+﻿// --- Viewmodels --
+//Login
+function LoginViewModel() {
     var self = this;
 
     self.email = ko.observable('');
@@ -46,10 +48,8 @@
     }
 }
 
-ko.applyBindings(new LoginViewModel(), $("#sign-in-link")[0]);
-ko.applyBindings(new LoginViewModel(), $("#exit-login")[0]);
-ko.applyBindings(new LoginViewModel(), $("#login-form")[0]);
 
+//Outreach tabs
 function TabViewModel() {
     var self = this;
 
@@ -91,13 +91,13 @@ function TabViewModel() {
         tabId: 1,
         tabStyle: "riseLink ",
         tabTitle: "Project RISE - On Campus",
-        tabCaption: "<img src='wwwroot/images/rise-logo-white.png' style='height: 20vh;; -webkit-filter: drop-shadow(5px 5px 5px #222); filter: drop-shadow(5px 5px 5px #222);'/> ",
+        tabCaption: "<img src='wwwroot/images/rise-logo-white.png' style='height: 20vh;; -webkit-filter: drop-shadow(4px 4px 2px #222); filter: drop-shadow(4px 4px 2px #222);'/> ",
         tabImg: "wwwroot/images/school4.jpg",
         pathToImage: "wwwroot/images/mockupSC.jpg",
         pathToPDF: "wwwroot/docs/school chaplains brochure.pdf",
         tabContentHeader: "R.I.S.E: Resilience in Student Education",
         tabContentBody: "Fresno Police chaplains teach resiliency skills in Fresno Unified Elementary Schools.",
-        tabContentBodyExt: "<p> Resilience In Student Education (RISE) is a partnership between the Fresno Police Chaplaincy and Fresno Unified School District to address the interpersonal and intrapersonal development of students beginning in the first grade. Research has shown that students who possess interpersonal and intrapersonal skills (self-efficacy, emotional regulation, empathy, impulse control, causal analysis, and optimism) are much more resilient and better able to “bounce back” from life’s challenges and maltreatment. Statistically, children who grow up in single parent homes are twice as likely to be abused and or exploited. </p> <ul class='col6'> <li>36% of the children live in single-parent households – the majority of which are fatherless</li> <li>In fatherless homes, children are two to three times more likely to:    <ul> <li> use drugs </li> <li>have educational, emotional and behavioral problems</li> <li>be victims of child abuse</li> <li>become teen parents</li> <li>engage in criminal behavior</li> </ul> </li> </ul> <img class='col6' src='../images/school1.jpg'></img> <p> Unfortunately, many of the challenges our children will face are unpreventable. While we may not be able to stop events that rob these kids of their hopes, we can teach them skillsets to overcome adversity and thrive.  <br/> One proactive solution, the School Resource Chaplaincy, was initiated in January of 2011 and is currently found in twenty Fresno Unified elementary schools.  The mission was to focus on protection and building character in younger students.  With time came the realization that acquiring positive character traits was rooted in the child’s sense of hopefulness for overcoming life’s challenges.  Research was reviewed which analyzed the causes and effects of overwhelming stresses on children raised in environments having great hardships and dysfunctional patterns.  Studies of successful and well-adjusted adults raised in such environments revealed they had maintained an ongoing sense of hopefulness by learning resilience or “bounce back” thinking skills from mentors.</p> <p> The School Resource Chaplains serve as mentors in promoting “bounce back” resiliency thinking patterns to 1st graders through the reading and discussion of children’s literature books.  Along with teaching resiliency skills, the SRCs provide an additional layer of abuse protection for students.  Finally, the SRCs offer care and comfort to students, staff, and/or parents when needs are discerned and assistance requested.  In summary, we minister hopefulness to the hopeless…<br/> Currently the SRC program is in need of individuals with a passion for youth and willingness to serve approximately five hours a week on campus.  Chaplain candidates do not have to be licensed, ordained or credentialed.  Training, materials and prayer are provided!  If interested in knowing more, contact John Edmondson at (559) 621-2120 or go to www.fpdchap.org. </p> ",
+        tabContentBodyExt: "<p> Resilience In Student Education (RISE) is a partnership between the Fresno Police Chaplaincy and Fresno Unified School District to address the interpersonal and intrapersonal development of students beginning in the first grade. Research has shown that students who possess interpersonal and intrapersonal skills (self-efficacy, emotional regulation, empathy, impulse control, causal analysis, and optimism) are much more resilient and better able to “bounce back” from life’s challenges and maltreatment. Statistically, children who grow up in single parent homes are twice as likely to be abused and or exploited. </p> <ul class='col6'> <li>36% of the children live in single-parent households – the majority of which are fatherless</li> <li>In fatherless homes, children are two to three times more likely to:    <ul> <li> use drugs </li> <li>have educational, emotional and behavioral problems</li> <li>be victims of child abuse</li> <li>become teen parents</li> <li>engage in criminal behavior</li> </ul> </li> </ul> <img class='col6' src='wwwroot/images/school1.jpg'></img> <p> Unfortunately, many of the challenges our children will face are unpreventable. While we may not be able to stop events that rob these kids of their hopes, we can teach them skillsets to overcome adversity and thrive.  <br/> One proactive solution, the School Resource Chaplaincy, was initiated in January of 2011 and is currently found in twenty Fresno Unified elementary schools.  The mission was to focus on protection and building character in younger students.  With time came the realization that acquiring positive character traits was rooted in the child’s sense of hopefulness for overcoming life’s challenges.  Research was reviewed which analyzed the causes and effects of overwhelming stresses on children raised in environments having great hardships and dysfunctional patterns.  Studies of successful and well-adjusted adults raised in such environments revealed they had maintained an ongoing sense of hopefulness by learning resilience or “bounce back” thinking skills from mentors.</p> <p> The School Resource Chaplains serve as mentors in promoting “bounce back” resiliency thinking patterns to 1st graders through the reading and discussion of children’s literature books.  Along with teaching resiliency skills, the SRCs provide an additional layer of abuse protection for students.  Finally, the SRCs offer care and comfort to students, staff, and/or parents when needs are discerned and assistance requested.  In summary, we minister hopefulness to the hopeless…<br/> Currently the SRC program is in need of individuals with a passion for youth and willingness to serve approximately five hours a week on campus.  Chaplain candidates do not have to be licensed, ordained or credentialed.  Training, materials and prayer are provided!  If interested in knowing more, contact John Edmondson at (559) 621-2120 or go to www.fpdchap.org. </p> ",
         hasVideo: true,
         video: "<video width=300 height=150 controls></video>",
         btnText: "Volunteer Now"
@@ -159,8 +159,8 @@ function TabViewModel() {
         pathToImage: "wwwroot/images/supportblue.jpg",
         pathToPDF: "wwwroot/docs/school chaplains brochure.pdf",
         tabContentHeader: "Support Blue",
-        tabContentBody: "Support Blue Fresno is a grassroots effort to broaden support for the men and women who protect our City, while preventing the current national anti-law enforcement narrative from gaining traction locally. <br/><br/> The Support Blue Fresno campaign aims to: <br/><ul> <li>Foster trust and confidence between our officers and the community they serve</li> <li>Provide opportunity for our community to visibly show their support for law enforcement</li> <li>Educate our youth to enhance relationships and understanding with officers</li></ul>You don’t have to risk your life day in and day out to keep our community safe. All you have to do is support those who do.",
-        tabContentBodyExt: "",
+        tabContentBody: "Support Blue Fresno is a grassroots effort to broaden support for the men and women who protect our City, <br/> while preventing an anti-law enforcement narrative from gaining traction locally. ",
+        tabContentBodyExt: "The Support Blue Fresno campaign aims to: <br/><ul> <li>Foster trust and confidence between our officers and the community they serve</li> <li>Provide opportunity for our community to visibly show their support for law enforcement</li> <li>Educate our youth to enhance relationships and understanding with officers</li></ul>You don’t have to risk your life day in and day out to keep our community safe. All you have to do is support those who do.",
         hasVideo: false,
         video: "",
         btnClass: "supportBlueBtn",
@@ -246,12 +246,10 @@ function TabViewModel() {
 
         }
     }
-
-
 }
-var tabVM = new TabViewModel();
-ko.applyBindings(tabVM, $("#ministries")[0]);
 
+
+//Gallery
 var album = function(item) {
     var self = this;
     self.albumTitle = item.albumTitle || "";
@@ -334,25 +332,20 @@ function GalleryViewModel() {
 
     })
 }
-var galleryVM = new GalleryViewModel();
-ko.applyBindings(galleryVM, $("#gallery")[0]);
 
-
+//About
 function AboutViewModel() {
     var self = this;
 
     self.goals = ko.observableArray([]);
-
     self.goals.push("Bullet points are an effective strategy for separating ideas");
     self.goals.push("We can use them on this page to show how the chaplaincy is helping our community");
     self.goals.push("Isnt this fun!?");
     self.goals.push("Bullet points!!");
-
 }
 
-var aboutVM = new AboutViewModel();
-ko.applyBindings(aboutVM, $("#goalsContainer")[0]);
 
+//Get involved cards
 function InvolvementViewModel() {
     var self = this;
     self.cards = ko.observableArray([]);
@@ -400,9 +393,8 @@ function InvolvementViewModel() {
 
     };
 }
-var involvementVM = new InvolvementViewModel();
-ko.applyBindings(involvementVM, $("#involvementContainer")[0]);
 
+//Events
 function EventsViewModel() {
     var self = this;
 
@@ -449,9 +441,9 @@ function EventsViewModel() {
     });
 }
 
-var eventsVM = new EventsViewModel();
-ko.applyBindings(eventsVM, $("#events")[0]);
 
+//Contact footer
+/*
 function ContactViewModel() {
     var self = this;
 
@@ -490,40 +482,153 @@ function ContactViewModel() {
         ]
     });
 }
-
-var footerVM = new ContactViewModel();
-ko.applyBindings(footerVM, $("#footerContainer")[0]);
-
-
-
-$("#ministriesReadButton").on("click", function() {
-    $("html,body").animate({
-        scrollTop: $(".ministriesInfo").offset().top - 50
-    }, 800);
-});
-
-
-/*
-$(".close-video-button").on("click", function () {
-    $(".expand-about").css("display", "none");
-    $("#about").css("height", "95vh");
-});
 */
-$(".bottom-event-link").on("click", function() {
-    alert("This is going to take you somewhere that will allow you to either read more or RSVP for an upcoming event. ")
-});
 
-$(".create-event-icon").on("click", function() {
-    $("body").css("overflow", "hidden");
-    $(".event-creator").css("display", "block");
-});
 
-$("#cancel-editor-button").on("click", function() {
-    $("body").css("overflow-y", "scroll");
-    $(".event-creator").css("display", "none");
-});
+function initControls() {
 
-$(document).ready(function() {
+    $("#homeBtn").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#home").offset().top - 50
+        }, 800);
+        $(".active").removeClass("active");
+        $("#homeBtn").addClass("active");
+        if ($(window).width() <= 768) {
+            $(".navbar-collapse").removeClass("in");
+            $(".navbar-collapse").addClass("collapse");
+        }
+    });
+
+    $("#ministriesBtn").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#ministries").offset().top
+        }, 800);
+        $("a.active").removeClass("active");
+        $("#ministriesBtn").addClass("active");
+        if ($(window).width() <= 768) {
+            $(".navbar-collapse").removeClass("in");
+            $(".navbar-collapse").addClass("collapse");
+        }
+    });
+
+    $("#scrollButton").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#ministries").offset().top
+        }, 800);
+        $("a.active").removeClass("active");
+        $("#ministriesBtn").addClass("active");
+    });
+
+    $("#aboutBtn").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#about").offset().top - 50
+        }, 800);
+        $(".active").removeClass("active");
+        $("#aboutBtn").addClass("active");
+        if ($(window).width() <= 768) {
+            $(".navbar-collapse").removeClass("in");
+            $(".navbar-collapse").addClass("collapse");
+        }
+    });
+
+
+    $("#galleryBtn").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#gallery").offset().top - 50
+        }, 800);
+        $(".active").removeClass("active");
+        $("#galleryBtn").addClass("active");
+        if ($(window).width() <= 768) {
+            $(".navbar-collapse").removeClass("in");
+            $(".navbar-collapse").addClass("collapse");
+        }
+    });
+
+    $("#involvementBtn").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#involvement").offset().top - 48
+        }, 800);
+        $(".active").removeClass("active");
+        $("#involvementBtn").addClass("active");
+        if ($(window).width() <= 768) {
+            $(".navbar-collapse").removeClass("in");
+            $(".navbar-collapse").addClass("collapse");
+        }
+    });
+
+    $("#newsBtn").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#news").offset().top - 50
+        }, 800);
+        $(".active").removeClass("active");
+        $("#newsBtn").addClass("active");
+        if ($(window).width() <= 768) {
+            $(".navbar-collapse").removeClass("in");
+            $(".navbar-collapse").addClass("collapse");
+        }
+    });
+
+    $("#contactBtn").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#contact").offset().top - 48
+        }, 800);
+        $(".active").removeClass("active");
+        $("#contactBtn").addClass("active");
+        if ($(window).width() <= 768) {
+            $(".navbar-collapse").removeClass("in");
+            $(".navbar-collapse").addClass("collapse");
+        }
+    });
+
+    $("#ministriesBrowseBtn").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#involvement").offset().top - 50
+        }, 800);
+        $(".active").removeClass("active");
+        $("#involvementBtn").addClass("active");
+    });
+
+    $(".learn-more-button").on("click", function() {
+        $(".expand-about").css("display", "block");
+        $("#about").css("height", "190vh");
+        $("html,body").animate({
+            scrollTop: $("#videoExpand").offset().top - 50
+        }, 800);
+    });
+
+    $(".close-video-button").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $("#about").offset().top - 50
+        }, 800);
+        $(".active").removeClass("active");
+        $("#aboutBtn").addClass("active");
+    });
+
+    $(".involvementApplyBTN").on("click", function() {
+        $(".involvementPopUp").show();
+        $(".PopUpBkg").show();
+    });
+
+    $("#ministriesReadButton").on("click", function() {
+        $("html,body").animate({
+            scrollTop: $(".ministriesInfo").offset().top - 50
+        }, 800);
+    });
+
+    $(".bottom-event-link").on("click", function() {
+        alert("This is going to take you somewhere that will allow you to either read more or RSVP for an upcoming event. ")
+    });
+
+    $(".create-event-icon").on("click", function() {
+        $("body").css("overflow", "hidden");
+        $(".event-creator").css("display", "block");
+    });
+
+    $("#cancel-editor-button").on("click", function() {
+        $("body").css("overflow-y", "scroll");
+        $(".event-creator").css("display", "none");
+    });
+
     //make sure the nav bar is only transparent on the home page
     function setNavTransparency() {
         var height = $(window).scrollTop();
@@ -533,8 +638,108 @@ $(document).ready(function() {
             $(".navbar-trans").removeClass("transparent");
         }
     };
-
     setNavTransparency();
+
+    /* smooth scrolling sections */
+    $("a[href*=#]:not([href=#])").click(function() {
+        if (location.pathname.replace(/^\//, "") == this.pathname.replace(/^\//, "") && location.hostname == this.hostname) {
+            var target = $(this.hash);
+            target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
+            if (target.length) {
+                $("html,body").animate({
+                    scrollTop: target.offset().top - 50
+                }, 800);
+
+                if (this.hash == "#home") {
+                    $(".scroll-up").hide();
+                } else {
+                    $(".scroll-up").show();
+                }
+
+                // activate animations in this section
+                target.find(".animate").delay(1200).addClass("animated");
+                setTimeout(function() {
+                    target.find(".animated").removeClass("animated");
+                }, 2000);
+
+                return false;
+            }
+        }
+    });
+
+    //make sure the right button is highlighted when scrolling
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+
+        if (height > $("#ministries").offset().top - 100) {
+            $("down-button-row").show();
+            $(".navbar-trans").addClass("navSolid");
+            $(".navbar-trans").removeClass("transparent");
+        }
+
+        if (height < $("#ministries").offset().top - 100) {
+            $("down-button-row").hide();
+            $(".active").removeClass("active");
+            $("#homeBtn").addClass("active");
+            $(".navbar-trans").addClass("transparent");
+        } else if (height < $("#about").offset().top - 100) {
+            $(".active").removeClass("active");
+            $("#ministriesBtn").addClass("active");
+
+        } else if (height < $("#gallery").offset().top - 100) {
+            $(".active").removeClass("active");
+            $("#aboutBtn").addClass("active");
+            $("#goalsContainer").addClass("animated slideInLeft");
+            $("#goalsContainer").show();
+            $(".mission-container").addClass("animated slideInRight");
+            $(".mission-container").delay(300).show();
+
+        } else if (height < $("#involvement").offset().top - 100) {
+            $(".active").removeClass("active");
+            $("#galleryBtn").addClass("active");
+
+        } else if (height < $("#news").offset().top - 100) {
+            $(".active").removeClass("active");
+            $("#involvementBtn").addClass("active");
+        } else if (height < $("#contact").offset().top - 100) {
+            $(".active").removeClass("active");
+            $("#newsBtn").addClass("active");
+        }
+
+        if (height > $("#contact").offset().top - 100) {
+            $(".active").removeClass("active");
+            $("#contactBtn").addClass("active");
+        } else if (height < $("#ministries").offset().top - 100) {
+            $("down-button-row").hide();
+
+        }
+        if ($("#homeBtn").hasClass("active")) {
+            $("down-button-row").hide();
+        }
+
+    });
+
+}
+
+
+$(document).ready(function() {
+
+    initControls();
+
+    //apply bindings
+    ko.applyBindings(new LoginViewModel(), $("#sign-in-link")[0]);
+    ko.applyBindings(new LoginViewModel(), $("#exit-login")[0]);
+    ko.applyBindings(new LoginViewModel(), $("#login-form")[0]);
+    var tabVM = new TabViewModel();
+    ko.applyBindings(tabVM, $("#ministries")[0]);
+    var galleryVM = new GalleryViewModel();
+    ko.applyBindings(galleryVM, $("#gallery")[0]);
+    var aboutVM = new AboutViewModel();
+    ko.applyBindings(aboutVM, $("#goalsContainer")[0]);
+    var involvementVM = new InvolvementViewModel();
+    ko.applyBindings(involvementVM, $("#involvementContainer")[0]);
+    var eventsVM = new EventsViewModel();
+    ko.applyBindings(eventsVM, $("#events")[0]);
 
     //home page 'seatbelt' animation for the tagline
     setTimeout(function() {
